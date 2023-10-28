@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trending - Exam Helper</title>
   <link rel="stylesheet" href="style.css">
-  
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+  <!-- Include jQuery library for JavaScript functionality -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav>
     <div class="nav-container">
@@ -18,33 +22,79 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="index.html#trending" class="active">Trending</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <!-- The "Trending" link with the "active" class indicates the current page -->
+        <li><a href="trending.html" class="active">Trending</a></li>
+        <li><a href="404.html">Contact</a></li>
       </ul>
     </div>
   </nav>
-  
+
   <section id="trending" class="section-container">
     <div class="header-content">
       <h1>Trending</h1>
       <p class="section-text2">Stay up-to-date with the latest trends and popular topics in exam preparation.</p>
     </div>
   </section>
-  
+
   <main>
     <section class="main-section">
       <h2 class="section-heading">Trending Papers</h2>
-      
-      <div class="trending-articles" id="trending-articles">
-  <!-- Trending articles will be inserted here dynamically -->
-</div>
-
-      
+      <div id="trending-articles">
+      </div>
     </section>
   </main>
 
   <footer id="contact" class="section-container">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <ul>
+          <li>Email: 19178@students,mrgs.school.nz</li>
+          <li>Phone: 09 621 0050</li>
+          <li>Address: Mt Roskill, Frost Rd</li>
+        </ul>
+      </div>
+
+      <div class="site-map">
+        <h3>Site Map</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="404.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2023 Exam Helper. All rights reserved.</p>
   </footer>
+
+
+  <script>
+    // Get references to the search input and the elements to be filtered
+    const searchInput = document.getElementById("search");
+    const articles = document.querySelectorAll(".trending-article"); // Adjust the selector as needed
+
+    // Attach an input event listener to the search input
+    searchInput.addEventListener("input", function () {
+      const searchQuery = searchInput.value.toLowerCase();
+
+      // Loop through the articles and hide/show based on the search query
+      articles.forEach((article) => {
+        const title = article.querySelector(".article-title").textContent.toLowerCase();
+        if (title.includes(searchQuery)) {
+          article.style.display = "block"; // Show the article
+        } else {
+          article.style.display = "none"; // Hide the article
+        }
+      });
+    });
+  </script>
+
+  <!-- Include JavaScript files for functionality -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="liketracker.js"></script>
 </body>
+
 </html>
