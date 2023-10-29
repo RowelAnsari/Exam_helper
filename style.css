@@ -94,7 +94,7 @@ header {
   margin-bottom: 20px;
 }
 
-.main-section img{
+.main-section img {
   width: 1000px;
   height: 500px;
 }
@@ -138,7 +138,6 @@ header {
 .features {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -146,7 +145,10 @@ header {
 }
 
 .feature {
-  flex: 0 0 calc(50% - 20px);
+  max-width: 400px;
+  /* Adjust this value as needed */
+  margin: 0 auto;
+  /* Center the block horizontally */
   margin-bottom: 30px;
   text-align: center;
   background-color: white;
@@ -157,18 +159,6 @@ header {
 
 .feature:hover {
   transform: translateY(-5px);
-}
-
-.feature i {
-  display: block;
-  font-size: 3rem;
-  color: #1E314E;
-  margin-bottom: 15px;
-  transition: color 0.3s;
-}
-
-.feature:hover i {
-  color: #FFA200;
 }
 
 .feature-heading {
@@ -219,7 +209,8 @@ footer {
 .contact-info,
 .site-map {
   flex: 1;
-  margin: 10px; /* Add margin to space out the sections */
+  margin: 10px;
+  /* Add margin to space out the sections */
 }
 
 .contact-info h3,

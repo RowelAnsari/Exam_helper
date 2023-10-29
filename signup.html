@@ -100,21 +100,21 @@
       }
 
       // Check the length of the username, password, and confirm password
-      if (username.length > 12 ) {
+      if (username.length > 12) {
         alert("Username must be 12 characters or less.");
         return false; // Prevent form submission
       }
-      
+
       if (username.length < 8) {
         alert("Username must be atleast 8 characters or more.");
         return false; // Prevent form submission
       }
- 
+
       if (password.length < 8 || confirmPassword.length < 8) {
         alert(" Password, and Confirm Password must be atleast 8 characters or more.");
         return false; // Prevent form submission
       }
-      
+
       if (password.length > 12 || confirmPassword.length > 12) {
         alert(" Password, and Confirm Password must be 12 characters or less.");
         return false; // Prevent form submission
