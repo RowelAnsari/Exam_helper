@@ -210,20 +210,25 @@ footer {
 .site-map {
   flex: 1;
   margin: 10px;
+  
   /* Add margin to space out the sections */
 }
 
 .contact-info h3,
 .site-map h3 {
   font-size: 20px;
+  
 }
 
 .contact-info ul,
 .site-map ul {
   list-style: none;
   padding: 0;
+  
 }
-
+.site-map a{
+  color: orange;
+}
 
 
 /* Responsive Styles */
@@ -238,6 +243,7 @@ footer {
     background-color: #1E314E;
     width: 100%;
     text-align: center;
+    
   }
 
 
@@ -550,3 +556,5 @@ footer {
 .like-button:hover {
   background-color: #FF8200;
 }
+
+
