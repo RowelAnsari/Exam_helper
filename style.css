@@ -134,6 +134,15 @@ header {
   background-color: #FFA200;
 }
 
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Add margin as needed for spacing */
+}
+
+
+
 
 .features {
   display: flex;
