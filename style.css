@@ -144,8 +144,16 @@ header {
   padding: 40px;
 }
 
-.feature img {
-  width: 50px; /* Adjust the width as needed */
+.image-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-link-container img {
+  width: 100px; /* Adjust the width as needed */
   height: auto; /* Maintain the aspect ratio */
 }
 
