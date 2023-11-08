@@ -136,12 +136,10 @@ header {
 
 .feature-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 20px; /* Add margin as needed for spacing */
 }
-
-
 
 
 .features {
