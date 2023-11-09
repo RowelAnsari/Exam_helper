@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Define the URL of your API
-  const apiUrl = "https://retoolapi.dev/KjWKX6/data"; // Replace with your actual API URL
+  const apiUrl = "https://retoolapi.dev/h4LcXt/data"; // Replace with your actual API URL
 
   // Select the container where trending articles will be inserted
   const trendingArticlesContainer = document.getElementById("trending-articles");
