@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
           // You may need to adapt the structure according to your API response
           trendingArticle.innerHTML = `
             <div class="article-image">
-              <img src="nzqa.png" alt="Trending Article">
+              <img src="imgs/nzqa.png" alt="Trending Article">
             </div>
 
             <div class="article-content">
